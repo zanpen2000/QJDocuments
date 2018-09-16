@@ -1,151 +1,152 @@
-# ÏîÄ¿ÁìÓò»®·Ö¼°Http×´Ì¬Âë·ÖÅä±í 1.0
+# é¡¹ç›®é¢†åŸŸåˆ’åˆ†åŠHttpçŠ¶æ€ç åˆ†é…è¡¨ 1.0
 
-> # ËµÃ÷
-> - ×´Ì¬ÂëÊÇÒ»×éÓÉ¡°0~9£¬a~z¡±×é³ÉµÄ6Î»×Ö·û´®£¬·ÖÎªÈý¼¶£¨µÚÒ»Î»¡¢µÚ¶þÈýÎ»¡¢µÚËÄÖÁµÚÁùÎ»£©
-> - µÚÒ»¼¶£ºµÚÒ»Î» ±íÊ¾ **ÒµÎñÁìÓò** ¡¾0~9¡¢a~z¡¿
-> - µÚ¶þ¼¶£ºµÚ¶þ¡¢ÈýÎ» ±íÊ¾ **·þÎñ**  ¡¾00~99¡¿
-> - µÚÈý¼¶£ºµÚËÄÎåÁùÎ» ±íÊ¾ **×´Ì¬Âë** ¡¾100~599×ñÑ­Ä¬ÈÏÖµ£¬600~999¿ª·¢×Ô¶¨Òå¡¿
-> - ÐÂ½¨ÏîÄ¿°´ÒµÎñÁìÓò£¨µÚÒ»¼¶×´Ì¬Âë£©·ÖÀà£¬µÚ¶þ¼¶¶¨ÒåÏîÄ¿Ãû³Æ¼°·þÎñ×´Ì¬Âë
+> # è¯´æ˜Ž
+> - çŠ¶æ€ç æ˜¯ä¸€ç»„ç”±â€œ0~9ï¼Œa~zâ€ç»„æˆçš„6ä½å­—ç¬¦ä¸²ï¼Œåˆ†ä¸ºä¸‰çº§ï¼ˆç¬¬ä¸€ä½ã€ç¬¬äºŒä¸‰ä½ã€ç¬¬å››è‡³ç¬¬å…­ä½ï¼‰
+> - ç¬¬ä¸€çº§ï¼šç¬¬ä¸€ä½ è¡¨ç¤º **ä¸šåŠ¡é¢†åŸŸ** ã€0~9ã€a~zã€‘
+> - ç¬¬äºŒçº§ï¼šç¬¬äºŒã€ä¸‰ä½ è¡¨ç¤º **æœåŠ¡**  ã€00~99ã€‘
+> - ç¬¬ä¸‰çº§ï¼šç¬¬å››äº”å…­ä½ è¡¨ç¤º **çŠ¶æ€ç ** ã€100~599éµå¾ªé»˜è®¤å€¼ï¼Œ600~999å¼€å‘è‡ªå®šä¹‰ã€‘
+> - æ–°å»ºé¡¹ç›®æŒ‰ä¸šåŠ¡é¢†åŸŸï¼ˆç¬¬ä¸€çº§çŠ¶æ€ç ï¼‰åˆ†ç±»ï¼Œç¬¬äºŒçº§å®šä¹‰é¡¹ç›®åç§°åŠæœåŠ¡çŠ¶æ€ç 
 >
 > ```java
->   //Ê¾Àý
->   # 103401  -> ÈË×ÊÔÚÏß²âÆÀ£¬Î´ÊÚÈ¨£¨ÇëÇóÒªÇóÉí·ÝÑéÖ¤£©
->   # x01202  -> ÒþºÅ²¦´ò»ù´¡·þÎñ£¬·þÎñÆ÷ÒÑ½ÓÊÜÇëÇó£¬µ«ÉÐÎ´´¦Àí¡£
->   # z04503  -> Æ½Ì¨¼Ü¹¹-ÏûÏ¢ÖÐÐÄ£¬·þÎñ²»¿ÉÓÃ£¨ÓÉÓÚ³¬ÔØ»òÍ£»úÎ¬»¤£©
+>   //ç¤ºä¾‹
+>   # 103401  -> äººèµ„åœ¨çº¿æµ‹è¯„ï¼ŒæœªæŽˆæƒï¼ˆè¯·æ±‚è¦æ±‚èº«ä»½éªŒè¯ï¼‰
+>   # x01202  -> éšå·æ‹¨æ‰“åŸºç¡€æœåŠ¡ï¼ŒæœåŠ¡å™¨å·²æŽ¥å—è¯·æ±‚ï¼Œä½†å°šæœªå¤„ç†ã€‚
+>   # z04503  -> å¹³å°æž¶æž„-æ¶ˆæ¯ä¸­å¿ƒï¼ŒæœåŠ¡ä¸å¯ç”¨ï¼ˆç”±äºŽè¶…è½½æˆ–åœæœºç»´æŠ¤ï¼‰
 > ```
+>
 > ---
 
-## µÚÒ»¼¶ËµÃ÷
-×´Ì¬Âë|ËµÃ÷|ËõÐ´|±¸×¢
+## ç¬¬ä¸€çº§è¯´æ˜Ž
+çŠ¶æ€ç |è¯´æ˜Ž|ç¼©å†™|å¤‡æ³¨
 -|-|-|-
-0|³É¹¦||Àý 0
-1|ÈËÁ¦×Ê±¾£¨¼ò³Æ£ºÈË×Ê£©|`HCD`|ÈËÁ¦×Ê±¾²¿£º<font color=orange>**H**</font>uman <font color=orange>**C**</font>apital <font color=orange>**D**</font>epartment
-2|ÅàÑµ½ÌÓý£¨¼ò³Æ£ºÅàÑµ£©|`TME`|ÅàÑµ½ÌÓý²¿£º<font color=orange>**T**</font>raining <font color=orange>**M**</font>inistry of <font color=orange>**E**</font>ducation
-3|²ÆÎñ|`GAD`|²ÆÎñ²¿£º<font color=orange>**G**</font>eneral<font color=orange>**A**</font>ccounting <font color=orange>**D**</font>epartment
-4|ÐÐÕþ|`ADM`|ÐÐÕþ²¿£º<font color=orange>**Adm**</font>inistration Department
-5|ÖÃÒµ|`BRD`|ÖÃÒµ²¿£º<font color=orange>**Br**</font>oker <font color=orange>**D**</font>epartment
-6|È¨Ö¤|`PRD`|È¨Ö¤²¿£º<font color=orange>**Pr**</font>operty <font color=orange>**D**</font>epartment
-7|ÒµÎñÍØÕ¹£¨¼ò³Æ£ºÊÐ³¡£©|`BED`|ÒµÎñÍØÕ¹²¿£º<font color=orange>**B**</font>usiness<font color=orange>**E**</font>xpending <font color=orange>**D**</font>epartment
-8|ÆóÒµÎÄ»¯Ðû´«£¨¼ò³Æ£ºÐû´«£©|`CPD`|ÆóÒµÎÄ»¯Ðû´«²¿£º<font color=orange>**C**</font>orporate Culture <font color=orange>**P**</font>ropaganda <font color=orange>**D**</font>epartment
-9|ÔËÓª|`OPD`|ÔËÓª²¿£º<font color=orange>**Op**</font>eration <font color=orange>**D**</font>epartment
-a|·¨Îñ|`LAD`|·¨ÂÉÊÂÎñ²¿£º<font color=orange>**L**</font>egal <font color=orange>**a**</font>ffairs <font color=orange>**D**</font>epartment
-<font color=green>b~m</font>|<font color=green>Ô¤ÁôÁìÓò</font>||<font color=green>bÖÁm£¬ÎªÆäËûÁìÓòÔ¤ÁôºÅÂë</font>
-n|ÍøÂç¿Æ¼¼£¨¼ò³Æ£ºÍøÂç£©|`NTD`|ÍøÂç¼¼Êõ²¿£º<font color=orange>**N**</font>etWorks <font color=orange>**T**</font>echnology <font color=orange>**D**</font>epartment
-<font color=green>o~v</font>|<font color=green>Ô¤ÁôÁìÓò</font>||<font color=green>oÖÁv£¬ÎªÆäËûÁìÓòÔ¤ÁôºÅÂë</font>
-w|¶ÔÍâÍøÕ¾ÓëÓ¦ÓÃ£¨¼ò³Æ£ºÍâ²¿£©|`WEB`|ÃæÏòÇ§¼ÒÒÔÍâÈËÈºµÄ²úÆ·£¨Èç£ºÆóÒµÐû´«ÍøÕ¾¡¢ÔÚÏß·¢²¼·¿Ô´Ð¡³ÌÐò¡¢¹ý»§½ø¶È²éÑ¯µÈ£©
-x|Æ½Ì¨ÉèÊ©-¹«¹²·þÎñ|`PUB`|¹«¹²·þÎñ£º<font color=orange>**Pub**</font>lic Service
-y|Æ½Ì¨ÉèÊ©-»ù´¡·þÎñ|`BAS`|»ù´¡·þÎñ£º<font color=orange>**Bas**</font>ic services
-z|Æ½Ì¨ÉèÊ©-Æ½Ì¨¼Ü¹¹|`UPA`|Í³Ò»Æ½Ì¨¼Ü¹¹£º<font color=orange>**U**</font>niversal <font color=orange>**P**</font>latform <font color=orange>**A**</font>rchitecture
+0|æˆåŠŸ||ä¾‹ 0
+1|äººåŠ›èµ„æœ¬ï¼ˆç®€ç§°ï¼šäººèµ„ï¼‰|`HCD`|äººåŠ›èµ„æœ¬éƒ¨ï¼š<font color=orange>**H**</font>uman <font color=orange>**C**</font>apital <font color=orange>**D**</font>epartment
+2|åŸ¹è®­æ•™è‚²ï¼ˆç®€ç§°ï¼šåŸ¹è®­ï¼‰|`TME`|åŸ¹è®­æ•™è‚²éƒ¨ï¼š<font color=orange>**T**</font>raining <font color=orange>**M**</font>inistry of <font color=orange>**E**</font>ducation
+3|è´¢åŠ¡|`GAD`|è´¢åŠ¡éƒ¨ï¼š<font color=orange>**G**</font>eneral<font color=orange>**A**</font>ccounting <font color=orange>**D**</font>epartment
+4|è¡Œæ”¿|`ADM`|è¡Œæ”¿éƒ¨ï¼š<font color=orange>**Adm**</font>inistration Department
+5|ç½®ä¸š|`BRD`|ç½®ä¸šéƒ¨ï¼š<font color=orange>**Br**</font>oker <font color=orange>**D**</font>epartment
+6|æƒè¯|`PRD`|æƒè¯éƒ¨ï¼š<font color=orange>**Pr**</font>operty <font color=orange>**D**</font>epartment
+7|ä¸šåŠ¡æ‹“å±•ï¼ˆç®€ç§°ï¼šå¸‚åœºï¼‰|`BED`|ä¸šåŠ¡æ‹“å±•éƒ¨ï¼š<font color=orange>**B**</font>usiness<font color=orange>**E**</font>xpending <font color=orange>**D**</font>epartment
+8|ä¼ä¸šæ–‡åŒ–å®£ä¼ ï¼ˆç®€ç§°ï¼šå®£ä¼ ï¼‰|`CPD`|ä¼ä¸šæ–‡åŒ–å®£ä¼ éƒ¨ï¼š<font color=orange>**C**</font>orporate Culture <font color=orange>**P**</font>ropaganda <font color=orange>**D**</font>epartment
+9|è¿è¥|`OPD`|è¿è¥éƒ¨ï¼š<font color=orange>**Op**</font>eration <font color=orange>**D**</font>epartment
+a|æ³•åŠ¡|`LAD`|æ³•å¾‹äº‹åŠ¡éƒ¨ï¼š<font color=orange>**L**</font>egal <font color=orange>**a**</font>ffairs <font color=orange>**D**</font>epartment
+<font color=green>b~m</font>|<font color=green>é¢„ç•™é¢†åŸŸ</font>||<font color=green>bè‡³mï¼Œä¸ºå…¶ä»–é¢†åŸŸé¢„ç•™å·ç </font>
+n|ç½‘ç»œç§‘æŠ€ï¼ˆç®€ç§°ï¼šç½‘ç»œï¼‰|`NTD`|ç½‘ç»œæŠ€æœ¯éƒ¨ï¼š<font color=orange>**N**</font>etWorks <font color=orange>**T**</font>echnology <font color=orange>**D**</font>epartment
+<font color=green>o~v</font>|<font color=green>é¢„ç•™é¢†åŸŸ</font>||<font color=green>oè‡³vï¼Œä¸ºå…¶ä»–é¢†åŸŸé¢„ç•™å·ç </font>
+w|å¯¹å¤–ç½‘ç«™ä¸Žåº”ç”¨ï¼ˆç®€ç§°ï¼šå¤–éƒ¨ï¼‰|`WEB`|é¢å‘åƒå®¶ä»¥å¤–äººç¾¤çš„äº§å“ï¼ˆå¦‚ï¼šä¼ä¸šå®£ä¼ ç½‘ç«™ã€åœ¨çº¿å‘å¸ƒæˆ¿æºå°ç¨‹åºã€è¿‡æˆ·è¿›åº¦æŸ¥è¯¢ç­‰ï¼‰
+x|å¹³å°è®¾æ–½-å…¬å…±æœåŠ¡|`PUB`|å…¬å…±æœåŠ¡ï¼š<font color=orange>**Pub**</font>lic Service
+y|å¹³å°è®¾æ–½-åŸºç¡€æœåŠ¡|`BAS`|åŸºç¡€æœåŠ¡ï¼š<font color=orange>**Bas**</font>ic services
+z|å¹³å°è®¾æ–½-å¹³å°æž¶æž„|`UPA`|ç»Ÿä¸€å¹³å°æž¶æž„ï¼š<font color=orange>**U**</font>niversal <font color=orange>**P**</font>latform <font color=orange>**A**</font>rchitecture
 
-## µÚ¶þ¼¶ËµÃ÷
-×´Ì¬Âë|ËµÃ÷|ËùÊôÁìÓò|ÏîÄ¿Ãû|ÏîÄ¿µØÖ·|±¸×¢
+## ç¬¬äºŒçº§è¯´æ˜Ž
+çŠ¶æ€ç |è¯´æ˜Ž|æ‰€å±žé¢†åŸŸ|é¡¹ç›®å|é¡¹ç›®åœ°å€|å¤‡æ³¨
 -|-|-|-|-|-
-**==1==**|**==ÈË×Ê==**|ÈËÁ¦×Ê±¾|||`ÕÐÆ¸/ÈëÖ°/µ÷¸Ú/ÀëÖ°/´ÇÍË/¸´Ö°/ÈËÔ±·ÖÅä/Ö°¼¶½úÉý`
-100|ÈË×ÊÁìÓòÏîÄ¿¼¯ºÏ|ÈËÁ¦×Ê±¾|`ÈË×ÊÁìÓòµÄÏîÄ¿¼¯ºÏÔ¤Áô`
-101|ÈË×ÊÕÐÆ¸|ÈËÁ¦×Ê±¾|HCD_recruitment||
-102|¼òÀú|ÈËÁ¦×Ê±¾|HCD_resume||
-103|ÔÚÏß²âÆÀ|ÈËÁ¦×Ê±¾|HCD_assessment||
-104|ÈË×ÊÒþºÅ|ÈËÁ¦×Ê±¾|HCD_hidden_call||Ô­ÏîÄ¿µØÖ·£ºhttps://hr.hiddencall.allhome.com.cn
-105|ÈË×Ê±¨±í|ÈËÁ¦×Ê±¾|HCD_report||
-**==2==**|**==ÅàÑµ==**|ÅàÑµ½ÌÓý|||`ÅàÑµ×éÖ¯/»áÒé×éÖ¯/ÅàÑµÇ©µ½/ÅàÑµ¿¼ºË/ÅàÑµ×ÊÁÏ¹ÜÀí/Ö±²¥¹ÜÀí/½²Ê¦¹ÜÀí/×ª»¯ÂÊ·ÖÎö`
-200|ÅàÑµÁìÓòÏîÄ¿¼¯ºÏ|ÅàÑµ½ÌÓý|`ÅàÑµÁìÓòµÄÏîÄ¿¼¯ºÏÔ¤Áô`
-201|»î¶¯ÖúÊÖ|ÅàÑµ½ÌÓý|TME_activity||
-**==3==**|**==²ÆÎñ==**|²ÆÎñ|||`±¨Ïú¹ÜÀí/Çë¿î/·¢·Å¹¤×Ê/ÖÃÒµÊÕ,ÍË,×ªÏò¹ÜÀí/³É±¾ÀûÈóºËËã[×Ü]/¹¤×ÊºËËã`
-300|²ÆÎñÁìÓòÏîÄ¿¼¯ºÏ|²ÆÎñ|`²ÆÎñÁìÓòµÄÏîÄ¿¼¯ºÏÔ¤Áô`
-301|²ÆÎñ±¨ÕÊ|²ÆÎñ|GAD_report_accounts||
-**==4==**|**==ÐÐÕþ==**|ÐÐÕþ|||`ÖÃÒµ¼ì²é/Îï×Ê¹ÜÀí/¾í×Ú¹ÜÀí`
-400|ÐÐÕþÁìÓòÏîÄ¿¼¯ºÏ|ÐÐÕþ|`ÐÐÕþÁìÓòµÄÏîÄ¿¼¯ºÏÔ¤Áô`
-401|¿¼ÇÚ|ÐÐÕþ|ADM_checkin||
-**==5==**|**==ÖÃÒµ==**|ÖÃÒµ|||`·¿Ô´²É¼¯/·¿Ô´·¢²¼/·¿Ô´¸ú½ø¹ÜÀí/Â¥ÅÌ¿â¹ÜÀí/¿ÍÔ´²É¼¯/¿ÍÔ´¸ú½ø¹ÜÀí/³É½»¹ÜÀí/³É×â¹ÜÀí/ÈËÔ±¹ÜÀí`
-500|ÖÃÒµÁìÓòÏîÄ¿¼¯ºÏ|ÖÃÒµ|`ÖÃÒµÁìÓòµÄÏîÄ¿¼¯ºÏÔ¤Áô`
-501|¾­¼ÍÈË¿¼ÊÔ|ÖÃÒµ|BRD_exam||
-502|ÖÃÒµÒþºÅ|ÖÃÒµ|BRD_hidden_call||Ô­ÏîÄ¿µØÖ·£ºhttps://miniapp.hiddencall.allhome.com.cn/?
-**==6==**|**==È¨Ö¤==**|È¨Ö¤|||`¿ì¼þÒµÎñ/¸ßÆÀ/´ú°ì¹ý»§/´ú°ì´û¿î/´úÇ©ºÏÍ¬/´úÄÉ·¿ÆõË°/È¨Ö¤²ÆÎñ¹ÜÀí`
-600|È¨Ö¤ÁìÓòÏîÄ¿¼¯ºÏ|È¨Ö¤|`È¨Ö¤ÁìÓòµÄÏîÄ¿¼¯ºÏÔ¤Áô`
-**==7==**|**==ÒµÎñÍØÕ¹£¨¼ò³Æ£ºÊÐ³¡£©==**|ÊÐ³¡|||`ÊÐ³¡ÍØÕ¹/ÊÐ³¡¼à¹ÜÓë·¢ÏÖ/ÊÐ³¡Í³¼ÆÊý¾Ý·ÖÎö`
-700|ÒµÎñÍØÕ¹£¨ÊÐ³¡£©ÁìÓòÏîÄ¿¼¯ºÏ|ÊÐ³¡|`ÒµÎñÍØÕ¹£¨ÊÐ³¡£©ÁìÓòµÄÏîÄ¿¼¯ºÏÔ¤Áô`
-**==8==**|**==ÆóÒµÎÄ»¯Ðû´«£¨¼ò³Æ£ºÐû´«£©==**|Ðû´«|||`ÇþµÀÍ³¼Æ·ÖÎö/Ðû´«¼Æ»®¹ÜÀí/Ðû´«Ð§¹ûÍ³¼Æ·ÖÎö`
-800|ÆóÒµÎÄ»¯Ðû´«£¨Ðû´«£©ÁìÓòÏîÄ¿¼¯ºÏ|Ðû´«|`ÆóÒµÎÄ»¯Ðû´«£¨Ðû´«£©ÁìÓòµÄÏîÄ¿¼¯ºÏÔ¤Áô`
-**==9==**|**==ÔËÓª==**|ÔËÓª|||`ÊÐ³¡·ÖÎö/ÔËÓª¼à¹Ü/³É±¾ÀûÈó·ÖÎö[×Ü]`
-900|ÔËÓªÁìÓòÏîÄ¿¼¯ºÏ|ÔËÓª|`ÔËÓªÁìÓòµÄÏîÄ¿¼¯ºÏÔ¤Áô`
-**==a==**|**==·¨Îñ==**|·¨Îñ|||`ÒµÎñ°ìÀí·çÏÕÆÀ¹À/·¨ÂÉ¾À·×Í³¼Æ/·¨ÂÉ·çÏÕÍ³¼Æ/¿Û·£Í³¼Æ/½â¾ö·¨ÂÉ¾À·×`
-900|·¨ÎñÁìÓòÏîÄ¿¼¯ºÏ|·¨Îñ|`·¨ÎñÁìÓòµÄÏîÄ¿¼¯ºÏÔ¤Áô`
-**==b~m==**|**==Ô¤ÁôÇø==**||||
-b~m|`Ô¤ÁôÇøÓò`|`Ô¤ÁôÇøÓò`|||
-**==n==**|**==ÍøÂç¿Æ¼¼£¨¼ò³Æ£ºÍøÂç£©==**|ÍøÂç|||`ÈËÔ±µµ°¸¹ÜÀí/×ÊÔ´¹ÜÀí/ÏîÄ¿¹ÜÀí`
-n00|ÍøÂçÁìÓòÏîÄ¿¼¯ºÏ|ÍøÂç|`ÍøÂçÁìÓòµÄÏîÄ¿¼¯ºÏÔ¤Áô`
-n01|×ÊÔ´¹ÜÀí|ÍøÂç|NTD_resources||°üÀ¨Í¼Êé¹ÜÀí¡¢Éè±¸¹ÜÀí¡¢°ì¹«ÓÃÆ·¹ÜÀíµÈ
-**==o~v==**|**==Ô¤ÁôÇø==**||||
-o~v|`Ô¤ÁôÇøÓò`|`Ô¤ÁôÇøÓò`|||
-**==x==**|**==Æ½Ì¨ÉèÊ©-¹«¹²·þÎñ==**|Æ½Ì¨ÉèÊ©-¹«¹²·þÎñ|||
-x00|Æ½Ì¨ÉèÊ©-¹«¹²·þÎñ|¹«¹²·þÎñ|`Ô¤Áô`
-x01|ÒþºÅ²¦´ò»ù´¡·þÎñ|¹«¹²·þÎñ|platform_PUB_hidden_call||Ô­ÏîÄ¿µØÖ·£ºhttps://hiddencall.allhome.com.cn
-x02|ÈËÁ³Ê¶±ðÓ¦ÓÃ·þÎñ|¹«¹²·þÎñ|platform_PUB_face_recognition||Ô­ÏîÄ¿µØÖ·£ºhttps://face.allhome.com.cn
-x03|Ë°·Ñ¼ÆËãÆ÷|¹«¹²·þÎñ|platform_PUB_calculator_tax
-x04|´û¿î¼ÆËãÆ÷|¹«¹²·þÎñ|platform_PUB_calculator_loan
-x05|»æÖÆÍ¼ÐÎ|¹«¹²·þÎñ|platform_PUB_drawing_graphics
-x06|È«¾°¿´·¿|¹«¹²·þÎñ|platform_PUB_panoramic
-x07|¼ÇÊÂ±¾|¹«¹²·þÎñ|platform_PUB_notepad
-x08|·¿Ô´ÑéÕæ£¨Â¼Èë£©|¹«¹²·þÎñ|platform_PUB_house_entry_verify
-x09|²úÈ¨ºËÑé·þÎñ|¹«¹²·þÎñ|platform_PUB_property_verification
-**==y==**|**==Æ½Ì¨ÉèÊ©-»ù´¡·þÎñ==**|Æ½Ì¨ÉèÊ©-»ù´¡·þÎñ|||
-y00|Æ½Ì¨ÉèÊ©-»ù´¡·þÎñ|»ù´¡·þÎñ|`Ô¤Áô`
-y01|È¨ÏÞ|»ù´¡·þÎñ|platform_BAS_permission
-y02|×éÖ¯»ú¹¹|»ù´¡·þÎñ|platform_BAS_orgnization
-**==z==**|**==Æ½Ì¨ÉèÊ©-Æ½Ì¨¼Ü¹¹==**|Æ½Ì¨ÉèÊ©-Æ½Ì¨¼Ü¹¹|||
-z00|Æ½Ì¨ÉèÊ©-Æ½Ì¨¼Ü¹¹|Æ½Ì¨¼Ü¹¹|`Ô¤Áô`
-z01|·þÎñ×¢²á/·¢ÏÖ|Æ½Ì¨¼Ü¹¹|platform_UPA_eureka
-z02|Íø¹Ø·þÎñ|Æ½Ì¨¼Ü¹¹|platform_UPA_gateway
-z03|ÈÕÖ¾·þÎñ|Æ½Ì¨¼Ü¹¹|platform_UPA_log
-z04|ÏûÏ¢ÖÐÐÄ|Æ½Ì¨¼Ü¹¹|platform_UPA_message_center
-z05|ÈÏÖ¤ÖÐÐÄ|Æ½Ì¨¼Ü¹¹|platform_UPA_authentication_center
-z06|×ÊÔ´·þÎñ-Í¼Æ¬|Æ½Ì¨¼Ü¹¹|platform_UPA_resources
-z07|cap·Ö²¼Ê½ÊÂÎñ|Æ½Ì¨¼Ü¹¹|platform_UPA_cap||Ô­ÏîÄ¿µØÖ·£ºhttps://cap.allhome.com.cn
+**==1==**|**==äººèµ„==**|äººåŠ›èµ„æœ¬|||`æ‹›è˜/å…¥èŒ/è°ƒå²—/ç¦»èŒ/è¾žé€€/å¤èŒ/äººå‘˜åˆ†é…/èŒçº§æ™‹å‡`
+100|äººèµ„é¢†åŸŸé¡¹ç›®é›†åˆ|äººåŠ›èµ„æœ¬|`äººèµ„é¢†åŸŸçš„é¡¹ç›®é›†åˆé¢„ç•™`
+101|äººèµ„æ‹›è˜|äººåŠ›èµ„æœ¬|HCD_recruitment||
+102|ç®€åŽ†|äººåŠ›èµ„æœ¬|HCD_resume||
+103|åœ¨çº¿æµ‹è¯„|äººåŠ›èµ„æœ¬|HCD_assessment||
+104|äººèµ„éšå·|äººåŠ›èµ„æœ¬|HCD_hidden_call||åŽŸé¡¹ç›®åœ°å€ï¼šhttps://hr.hiddencall.allhome.com.cn
+105|äººèµ„æŠ¥è¡¨|äººåŠ›èµ„æœ¬|HCD_report||
+**==2==**|**==åŸ¹è®­==**|åŸ¹è®­æ•™è‚²|||`åŸ¹è®­ç»„ç»‡/ä¼šè®®ç»„ç»‡/åŸ¹è®­ç­¾åˆ°/åŸ¹è®­è€ƒæ ¸/åŸ¹è®­èµ„æ–™ç®¡ç†/ç›´æ’­ç®¡ç†/è®²å¸ˆç®¡ç†/è½¬åŒ–çŽ‡åˆ†æž`
+200|åŸ¹è®­é¢†åŸŸé¡¹ç›®é›†åˆ|åŸ¹è®­æ•™è‚²|`åŸ¹è®­é¢†åŸŸçš„é¡¹ç›®é›†åˆé¢„ç•™`
+201|æ´»åŠ¨åŠ©æ‰‹|åŸ¹è®­æ•™è‚²|TME_activity||
+**==3==**|**==è´¢åŠ¡==**|è´¢åŠ¡|||`æŠ¥é”€ç®¡ç†/è¯·æ¬¾/å‘æ”¾å·¥èµ„/ç½®ä¸šæ”¶,é€€,è½¬å‘ç®¡ç†/æˆæœ¬åˆ©æ¶¦æ ¸ç®—[æ€»]/å·¥èµ„æ ¸ç®—`
+300|è´¢åŠ¡é¢†åŸŸé¡¹ç›®é›†åˆ|è´¢åŠ¡|`è´¢åŠ¡é¢†åŸŸçš„é¡¹ç›®é›†åˆé¢„ç•™`
+301|è´¢åŠ¡æŠ¥å¸|è´¢åŠ¡|GAD_report_accounts||
+**==4==**|**==è¡Œæ”¿==**|è¡Œæ”¿|||`ç½®ä¸šæ£€æŸ¥/ç‰©èµ„ç®¡ç†/å·å®—ç®¡ç†`
+400|è¡Œæ”¿é¢†åŸŸé¡¹ç›®é›†åˆ|è¡Œæ”¿|`è¡Œæ”¿é¢†åŸŸçš„é¡¹ç›®é›†åˆé¢„ç•™`
+401|è€ƒå‹¤|è¡Œæ”¿|ADM_checkin||
+**==5==**|**==ç½®ä¸š==**|ç½®ä¸š|||`æˆ¿æºé‡‡é›†/æˆ¿æºå‘å¸ƒ/æˆ¿æºè·Ÿè¿›ç®¡ç†/æ¥¼ç›˜åº“ç®¡ç†/å®¢æºé‡‡é›†/å®¢æºè·Ÿè¿›ç®¡ç†/æˆäº¤ç®¡ç†/æˆç§Ÿç®¡ç†/äººå‘˜ç®¡ç†`
+500|ç½®ä¸šé¢†åŸŸé¡¹ç›®é›†åˆ|ç½®ä¸š|`ç½®ä¸šé¢†åŸŸçš„é¡¹ç›®é›†åˆé¢„ç•™`
+501|ç»çºªäººè€ƒè¯•|ç½®ä¸š|BRD_exam||
+502|ç½®ä¸šéšå·|ç½®ä¸š|BRD_hidden_call||åŽŸé¡¹ç›®åœ°å€ï¼šhttps://miniapp.hiddencall.allhome.com.cn/?
+**==6==**|**==æƒè¯==**|æƒè¯|||`å¿«ä»¶ä¸šåŠ¡/é«˜è¯„/ä»£åŠžè¿‡æˆ·/ä»£åŠžè´·æ¬¾/ä»£ç­¾åˆåŒ/ä»£çº³æˆ¿å¥‘ç¨Ž/æƒè¯è´¢åŠ¡ç®¡ç†`
+600|æƒè¯é¢†åŸŸé¡¹ç›®é›†åˆ|æƒè¯|`æƒè¯é¢†åŸŸçš„é¡¹ç›®é›†åˆé¢„ç•™`
+**==7==**|**==ä¸šåŠ¡æ‹“å±•ï¼ˆç®€ç§°ï¼šå¸‚åœºï¼‰==**|å¸‚åœº|||`å¸‚åœºæ‹“å±•/å¸‚åœºç›‘ç®¡ä¸Žå‘çŽ°/å¸‚åœºç»Ÿè®¡æ•°æ®åˆ†æž`
+700|ä¸šåŠ¡æ‹“å±•ï¼ˆå¸‚åœºï¼‰é¢†åŸŸé¡¹ç›®é›†åˆ|å¸‚åœº|`ä¸šåŠ¡æ‹“å±•ï¼ˆå¸‚åœºï¼‰é¢†åŸŸçš„é¡¹ç›®é›†åˆé¢„ç•™`
+**==8==**|**==ä¼ä¸šæ–‡åŒ–å®£ä¼ ï¼ˆç®€ç§°ï¼šå®£ä¼ ï¼‰==**|å®£ä¼ |||`æ¸ é“ç»Ÿè®¡åˆ†æž/å®£ä¼ è®¡åˆ’ç®¡ç†/å®£ä¼ æ•ˆæžœç»Ÿè®¡åˆ†æž`
+800|ä¼ä¸šæ–‡åŒ–å®£ä¼ ï¼ˆå®£ä¼ ï¼‰é¢†åŸŸé¡¹ç›®é›†åˆ|å®£ä¼ |`ä¼ä¸šæ–‡åŒ–å®£ä¼ ï¼ˆå®£ä¼ ï¼‰é¢†åŸŸçš„é¡¹ç›®é›†åˆé¢„ç•™`
+**==9==**|**==è¿è¥==**|è¿è¥|||`å¸‚åœºåˆ†æž/è¿è¥ç›‘ç®¡/æˆæœ¬åˆ©æ¶¦åˆ†æž[æ€»]`
+900|è¿è¥é¢†åŸŸé¡¹ç›®é›†åˆ|è¿è¥|`è¿è¥é¢†åŸŸçš„é¡¹ç›®é›†åˆé¢„ç•™`
+**==a==**|**==æ³•åŠ¡==**|æ³•åŠ¡|||`ä¸šåŠ¡åŠžç†é£Žé™©è¯„ä¼°/æ³•å¾‹çº çº·ç»Ÿè®¡/æ³•å¾‹é£Žé™©ç»Ÿè®¡/æ‰£ç½šç»Ÿè®¡/è§£å†³æ³•å¾‹çº çº·`
+900|æ³•åŠ¡é¢†åŸŸé¡¹ç›®é›†åˆ|æ³•åŠ¡|`æ³•åŠ¡é¢†åŸŸçš„é¡¹ç›®é›†åˆé¢„ç•™`
+**==b~m==**|**==é¢„ç•™åŒº==**||||
+b~m|`é¢„ç•™åŒºåŸŸ`|`é¢„ç•™åŒºåŸŸ`|||
+**==n==**|**==ç½‘ç»œç§‘æŠ€ï¼ˆç®€ç§°ï¼šç½‘ç»œï¼‰==**|ç½‘ç»œ|||`äººå‘˜æ¡£æ¡ˆç®¡ç†/èµ„æºç®¡ç†/é¡¹ç›®ç®¡ç†`
+n00|ç½‘ç»œé¢†åŸŸé¡¹ç›®é›†åˆ|ç½‘ç»œ|`ç½‘ç»œé¢†åŸŸçš„é¡¹ç›®é›†åˆé¢„ç•™`
+n01|èµ„æºç®¡ç†|ç½‘ç»œ|NTD_resources||åŒ…æ‹¬å›¾ä¹¦ç®¡ç†ã€è®¾å¤‡ç®¡ç†ã€åŠžå…¬ç”¨å“ç®¡ç†ç­‰
+**==o~v==**|**==é¢„ç•™åŒº==**||||
+o~v|`é¢„ç•™åŒºåŸŸ`|`é¢„ç•™åŒºåŸŸ`|||
+**==x==**|**==å¹³å°è®¾æ–½-å…¬å…±æœåŠ¡==**|å¹³å°è®¾æ–½-å…¬å…±æœåŠ¡|||
+x00|å¹³å°è®¾æ–½-å…¬å…±æœåŠ¡|å…¬å…±æœåŠ¡|`é¢„ç•™`
+x01|éšå·æ‹¨æ‰“åŸºç¡€æœåŠ¡|å…¬å…±æœåŠ¡|platform_PUB_hidden_call||åŽŸé¡¹ç›®åœ°å€ï¼šhttps://hiddencall.allhome.com.cn
+x02|äººè„¸è¯†åˆ«åº”ç”¨æœåŠ¡|å…¬å…±æœåŠ¡|platform_PUB_face_recognition||åŽŸé¡¹ç›®åœ°å€ï¼šhttps://face.allhome.com.cn
+x03|ç¨Žè´¹è®¡ç®—å™¨|å…¬å…±æœåŠ¡|platform_PUB_calculator_tax
+x04|è´·æ¬¾è®¡ç®—å™¨|å…¬å…±æœåŠ¡|platform_PUB_calculator_loan
+x05|ç»˜åˆ¶å›¾å½¢|å…¬å…±æœåŠ¡|platform_PUB_drawing_graphics
+x06|å…¨æ™¯çœ‹æˆ¿|å…¬å…±æœåŠ¡|platform_PUB_panoramic
+x07|è®°äº‹æœ¬|å…¬å…±æœåŠ¡|platform_PUB_notepad
+x08|æˆ¿æºéªŒçœŸï¼ˆå½•å…¥ï¼‰|å…¬å…±æœåŠ¡|platform_PUB_house_entry_verify
+x09|äº§æƒæ ¸éªŒæœåŠ¡|å…¬å…±æœåŠ¡|platform_PUB_property_verification
+**==y==**|**==å¹³å°è®¾æ–½-åŸºç¡€æœåŠ¡==**|å¹³å°è®¾æ–½-åŸºç¡€æœåŠ¡|||
+y00|å¹³å°è®¾æ–½-åŸºç¡€æœåŠ¡|åŸºç¡€æœåŠ¡|`é¢„ç•™`
+y01|æƒé™|åŸºç¡€æœåŠ¡|platform_BAS_permission
+y02|ç»„ç»‡æœºæž„|åŸºç¡€æœåŠ¡|platform_BAS_orgnization
+**==z==**|**==å¹³å°è®¾æ–½-å¹³å°æž¶æž„==**|å¹³å°è®¾æ–½-å¹³å°æž¶æž„|||
+z00|å¹³å°è®¾æ–½-å¹³å°æž¶æž„|å¹³å°æž¶æž„|`é¢„ç•™`
+z01|æœåŠ¡æ³¨å†Œ/å‘çŽ°|å¹³å°æž¶æž„|platform_UPA_eureka
+z02|ç½‘å…³æœåŠ¡|å¹³å°æž¶æž„|platform_UPA_gateway
+z03|æ—¥å¿—æœåŠ¡|å¹³å°æž¶æž„|platform_UPA_log
+z04|æ¶ˆæ¯ä¸­å¿ƒ|å¹³å°æž¶æž„|platform_UPA_message_center
+z05|è®¤è¯ä¸­å¿ƒ|å¹³å°æž¶æž„|platform_UPA_authentication_center
+z06|èµ„æºæœåŠ¡-å›¾ç‰‡|å¹³å°æž¶æž„|platform_UPA_resources
+z07|capåˆ†å¸ƒå¼äº‹åŠ¡|å¹³å°æž¶æž„|platform_UPA_cap||åŽŸé¡¹ç›®åœ°å€ï¼šhttps://cap.allhome.com.cn
 
-## µÚÈý¼¶ËµÃ÷
-×´Ì¬Âë|ËµÃ÷|±¸×¢
+## ç¬¬ä¸‰çº§è¯´æ˜Ž
+çŠ¶æ€ç |è¯´æ˜Ž|å¤‡æ³¨
 -|-|-
-**==1xx==**|**ÁÙÊ±ÏìÓ¦**|**±íÊ¾ÁÙÊ±ÏìÓ¦²¢ÐèÒªÇëÇóÕß¼ÌÐøÖ´ÐÐ²Ù×÷µÄ×´Ì¬´úÂë¡£**
-100|¼ÌÐø|ÇëÇóÕßÓ¦µ±¼ÌÐøÌá³öÇëÇó¡£·þÎñÆ÷·µ»Ø´Ë´úÂë±íÊ¾ÒÑÊÕµ½ÇëÇóµÄµÚÒ»²¿·Ö£¬ÕýÔÚµÈ´ýÆäÓà²¿·Ö¡£
-101|ÇÐ»»Ð­Òé|ÇëÇóÕßÒÑÒªÇó·þÎñÆ÷ÇÐ»»Ð­Òé£¬·þÎñÆ÷ÒÑÈ·ÈÏ²¢×¼±¸ÇÐ»»¡£
-**==2xx==**|**³É¹¦**|**±íÊ¾³É¹¦´¦ÀíÁËÇëÇóµÄ×´Ì¬´úÂë¡£**
-200|³É¹¦|·þÎñÆ÷ÒÑ³É¹¦´¦ÀíÁËÇëÇó¡£Í¨³££¬Õâ±íÊ¾·þÎñÆ÷Ìá¹©ÁËÇëÇóµÄÍøÒ³¡£
-201|ÒÑ´´½¨|ÇëÇó³É¹¦²¢ÇÒ·þÎñÆ÷´´½¨ÁËÐÂµÄ×ÊÔ´¡£
-202|ÒÑ½ÓÊÜ|·þÎñÆ÷ÒÑ½ÓÊÜÇëÇó£¬µ«ÉÐÎ´´¦Àí¡£
-203|·ÇÊÚÈ¨ÐÅÏ¢|·þÎñÆ÷ÒÑ³É¹¦´¦ÀíÁËÇëÇó£¬µ«·µ»ØµÄÐÅÏ¢¿ÉÄÜÀ´×ÔÁíÒ»À´Ô´¡£
-204|ÎÞÄÚÈÝ|·þÎñÆ÷³É¹¦´¦ÀíÁËÇëÇó£¬µ«Ã»ÓÐ·µ»ØÈÎºÎÄÚÈÝ¡£
-205|ÖØÖÃÄÚÈÝ|·þÎñÆ÷³É¹¦´¦ÀíÁËÇëÇó£¬µ«Ã»ÓÐ·µ»ØÈÎºÎÄÚÈÝ¡£
-206|²¿·ÖÄÚÈÝ|·þÎñÆ÷³É¹¦´¦ÀíÁË²¿·Ö GET ÇëÇó¡£
-**==3xx==** |**ÖØ¶¨Ïò**|**±íÊ¾ÒªÍê³ÉÇëÇó£¬ÐèÒª½øÒ»²½²Ù×÷¡£Í¨³££¬ÕâÐ©×´Ì¬´úÂëÓÃÀ´ÖØ¶¨Ïò¡£**
-300 |¶àÖÖÑ¡Ôñ|Õë¶ÔÇëÇó£¬·þÎñÆ÷¿ÉÖ´ÐÐ¶àÖÖ²Ù×÷¡£·þÎñÆ÷¿É¸ù¾ÝÇëÇóÕß£¨user agent£©Ñ¡ÔñÒ»Ïî²Ù×÷£¬»òÌá¹©²Ù×÷ÁÐ±í¹©ÇëÇóÕßÑ¡Ôñ¡£
-301 |ÓÀ¾ÃÒÆ¶¯|ÇëÇóµÄÍøÒ³ÒÑÓÀ¾ÃÒÆ¶¯µ½ÐÂÎ»ÖÃ¡£·þÎñÆ÷·µ»Ø´ËÏìÓ¦£¨¶Ô GET »ò HEAD ÇëÇóµÄÏìÓ¦£©Ê±£¬»á×Ô¶¯½«ÇëÇóÕß×ªµ½ÐÂÎ»ÖÃ¡£
-302 |ÁÙÊ±ÒÆ¶¯|·þÎñÆ÷Ä¿Ç°´Ó²»Í¬Î»ÖÃµÄÍøÒ³ÏìÓ¦ÇëÇó£¬µ«ÇëÇóÕßÓ¦¼ÌÐøÊ¹ÓÃÔ­ÓÐÎ»ÖÃÀ´½øÐÐÒÔºóµÄÇëÇó¡£
-303 |²é¿´ÆäËûÎ»ÖÃ|ÇëÇóÕßÓ¦µ±¶Ô²»Í¬µÄÎ»ÖÃÊ¹ÓÃµ¥¶ÀµÄ GET ÇëÇóÀ´¼ìË÷ÏìÓ¦Ê±£¬·þÎñÆ÷·µ»Ø´Ë´úÂë¡£
-304 |Î´ÐÞ¸Ä|×Ô´ÓÉÏ´ÎÇëÇóºó£¬ÇëÇóµÄÍøÒ³Î´ÐÞ¸Ä¹ý¡£·þÎñÆ÷·µ»Ø´ËÏìÓ¦Ê±£¬²»»á·µ»ØÍøÒ³ÄÚÈÝ¡£
-305 |Ê¹ÓÃ´úÀí|ÇëÇóÕßÖ»ÄÜÊ¹ÓÃ´úÀí·ÃÎÊÇëÇóµÄÍøÒ³¡£Èç¹û·þÎñÆ÷·µ»Ø´ËÏìÓ¦£¬»¹±íÊ¾ÇëÇóÕßÓ¦Ê¹ÓÃ´úÀí¡£
-307 |ÁÙÊ±ÖØ¶¨Ïò|·þÎñÆ÷Ä¿Ç°´Ó²»Í¬Î»ÖÃµÄÍøÒ³ÏìÓ¦ÇëÇó£¬µ«ÇëÇóÕßÓ¦¼ÌÐøÊ¹ÓÃÔ­ÓÐÎ»ÖÃÀ´½øÐÐÒÔºóµÄÇëÇó¡£
-**==4xx==**|**¿Í»§¶Ë´íÎó**|**ÕâÀàµÄ×´Ì¬Âë´ú±íÁË¿Í»§¶Ë¿´ÆðÀ´¿ÉÄÜ·¢ÉúÁË´íÎó£¬·Á°­ÁË·þÎñÆ÷µÄ´¦Àí¡£**
-400|´íÎóÇëÇó|·þÎñÆ÷²»Àí½âÇëÇóµÄÓï·¨¡£
-401|Î´ÊÚÈ¨|ÇëÇóÒªÇóÉí·ÝÑéÖ¤¡£¶ÔÓÚÐèÒªµÇÂ¼µÄÍøÒ³£¬·þÎñÆ÷¿ÉÄÜ·µ»Ø´ËÏìÓ¦¡£
-403|½ûÖ¹|·þÎñÆ÷¾Ü¾øÇëÇó¡£
-404|Î´ÕÒµ½|·þÎñÆ÷ÕÒ²»µ½ÇëÇóµÄÍøÒ³¡£
-405|·½·¨½ûÓÃ|½ûÓÃÇëÇóÖÐÖ¸¶¨µÄ·½·¨¡£
-406|²»½ÓÊÜ|ÎÞ·¨Ê¹ÓÃÇëÇóµÄÄÚÈÝÌØÐÔÏìÓ¦ÇëÇóµÄÍøÒ³¡£
-407|ÐèÒª´úÀíÊÚÈ¨|´Ë×´Ì¬´úÂëÓë 401£¨Î´ÊÚÈ¨£©ÀàËÆ£¬µ«Ö¸¶¨ÇëÇóÕßÓ¦µ±ÊÚÈ¨Ê¹ÓÃ´úÀí¡£
-408|ÇëÇó³¬Ê±|·þÎñÆ÷µÈºòÇëÇóÊ±·¢Éú³¬Ê±¡£
-409|³åÍ»|·þÎñÆ÷ÔÚÍê³ÉÇëÇóÊ±·¢Éú³åÍ»¡£·þÎñÆ÷±ØÐëÔÚÏìÓ¦ÖÐ°üº¬ÓÐ¹Ø³åÍ»µÄÐÅÏ¢¡£
-410|ÒÑÉ¾³ý|Èç¹ûÇëÇóµÄ×ÊÔ´ÒÑÓÀ¾ÃÉ¾³ý£¬·þÎñÆ÷¾Í»á·µ»Ø´ËÏìÓ¦¡£
-411|ÐèÒªÓÐÐ§³¤¶È|·þÎñÆ÷²»½ÓÊÜ²»º¬ÓÐÐ§ÄÚÈÝ³¤¶È±êÍ·×Ö¶ÎµÄÇëÇó¡£
-412|Î´Âú×ãÇ°ÌáÌõ¼þ|·þÎñÆ÷Î´Âú×ãÇëÇóÕßÔÚÇëÇóÖÐÉèÖÃµÄÆäÖÐÒ»¸öÇ°ÌáÌõ¼þ¡£
-413|ÇëÇóÊµÌå¹ý´ó|·þÎñÆ÷ÎÞ·¨´¦ÀíÇëÇó£¬ÒòÎªÇëÇóÊµÌå¹ý´ó£¬³¬³ö·þÎñÆ÷µÄ´¦ÀíÄÜÁ¦¡£
-414|ÇëÇóµÄ URI ¹ý³¤|ÇëÇóµÄ URI£¨Í¨³£ÎªÍøÖ·£©¹ý³¤£¬·þÎñÆ÷ÎÞ·¨´¦Àí¡£
-415|²»Ö§³ÖµÄÃ½ÌåÀàÐÍ|ÇëÇóµÄ¸ñÊ½²»ÊÜÇëÇóÒ³ÃæµÄÖ§³Ö¡£
-416|ÇëÇó·¶Î§²»·ûºÏÒªÇó|Èç¹ûÒ³ÃæÎÞ·¨Ìá¹©ÇëÇóµÄ·¶Î§£¬Ôò·þÎñÆ÷»á·µ»Ø´Ë×´Ì¬´úÂë¡£
-417|Î´Âú×ãÆÚÍûÖµ|·þÎñÆ÷Î´Âú×ã"ÆÚÍû"ÇëÇó±êÍ·×Ö¶ÎµÄÒªÇó¡£
-**==5xx==**|**·þÎñÆ÷´íÎó**|**ÕâÐ©×´Ì¬´úÂë±íÊ¾·þÎñÆ÷ÔÚ³¢ÊÔ´¦ÀíÇëÇóÊ±·¢ÉúÄÚ²¿´íÎó¡£ÕâÐ©´íÎó¿ÉÄÜÊÇ·þÎñÆ÷±¾ÉíµÄ´íÎó£¬¶ø²»ÊÇÇëÇó³ö´í¡£**
-500|·þÎñÆ÷ÄÚ²¿´íÎó|·þÎñÆ÷Óöµ½´íÎó£¬ÎÞ·¨Íê³ÉÇëÇó¡£
-501|ÉÐÎ´ÊµÊ©|·þÎñÆ÷²»¾ß±¸Íê³ÉÇëÇóµÄ¹¦ÄÜ¡£ÀýÈç£¬·þÎñÆ÷ÎÞ·¨Ê¶±ðÇëÇó·½·¨Ê±¿ÉÄÜ»á·µ»Ø´Ë´úÂë¡£
-502|´íÎóÍø¹Ø|·þÎñÆ÷×÷ÎªÍø¹Ø»ò´úÀí£¬´ÓÉÏÓÎ·þÎñÆ÷ÊÕµ½ÎÞÐ§ÏìÓ¦¡£
-503|·þÎñ²»¿ÉÓÃ|·þÎñÆ÷Ä¿Ç°ÎÞ·¨Ê¹ÓÃ£¨ÓÉÓÚ³¬ÔØ»òÍ£»úÎ¬»¤£©¡£Í¨³££¬ÕâÖ»ÊÇÔÝÊ±×´Ì¬¡£
-504|Íø¹Ø³¬Ê±|·þÎñÆ÷×÷ÎªÍø¹Ø»ò´úÀí£¬µ«ÊÇÃ»ÓÐ¼°Ê±´ÓÉÏÓÎ·þÎñÆ÷ÊÕµ½ÇëÇó¡£
-505|HTTP °æ±¾²»ÊÜÖ§³Ö|·þÎñÆ÷²»Ö§³ÖÇëÇóÖÐËùÓÃµÄ HTTP Ð­Òé°æ±¾¡£
+**==1xx==**|**ä¸´æ—¶å“åº”**|**è¡¨ç¤ºä¸´æ—¶å“åº”å¹¶éœ€è¦è¯·æ±‚è€…ç»§ç»­æ‰§è¡Œæ“ä½œçš„çŠ¶æ€ä»£ç ã€‚**
+100|ç»§ç»­|è¯·æ±‚è€…åº”å½“ç»§ç»­æå‡ºè¯·æ±‚ã€‚æœåŠ¡å™¨è¿”å›žæ­¤ä»£ç è¡¨ç¤ºå·²æ”¶åˆ°è¯·æ±‚çš„ç¬¬ä¸€éƒ¨åˆ†ï¼Œæ­£åœ¨ç­‰å¾…å…¶ä½™éƒ¨åˆ†ã€‚
+101|åˆ‡æ¢åè®®|è¯·æ±‚è€…å·²è¦æ±‚æœåŠ¡å™¨åˆ‡æ¢åè®®ï¼ŒæœåŠ¡å™¨å·²ç¡®è®¤å¹¶å‡†å¤‡åˆ‡æ¢ã€‚
+**==2xx==**|**æˆåŠŸ**|**è¡¨ç¤ºæˆåŠŸå¤„ç†äº†è¯·æ±‚çš„çŠ¶æ€ä»£ç ã€‚**
+200|æˆåŠŸ|æœåŠ¡å™¨å·²æˆåŠŸå¤„ç†äº†è¯·æ±‚ã€‚é€šå¸¸ï¼Œè¿™è¡¨ç¤ºæœåŠ¡å™¨æä¾›äº†è¯·æ±‚çš„ç½‘é¡µã€‚
+201|å·²åˆ›å»º|è¯·æ±‚æˆåŠŸå¹¶ä¸”æœåŠ¡å™¨åˆ›å»ºäº†æ–°çš„èµ„æºã€‚
+202|å·²æŽ¥å—|æœåŠ¡å™¨å·²æŽ¥å—è¯·æ±‚ï¼Œä½†å°šæœªå¤„ç†ã€‚
+203|éžæŽˆæƒä¿¡æ¯|æœåŠ¡å™¨å·²æˆåŠŸå¤„ç†äº†è¯·æ±‚ï¼Œä½†è¿”å›žçš„ä¿¡æ¯å¯èƒ½æ¥è‡ªå¦ä¸€æ¥æºã€‚
+204|æ— å†…å®¹|æœåŠ¡å™¨æˆåŠŸå¤„ç†äº†è¯·æ±‚ï¼Œä½†æ²¡æœ‰è¿”å›žä»»ä½•å†…å®¹ã€‚
+205|é‡ç½®å†…å®¹|æœåŠ¡å™¨æˆåŠŸå¤„ç†äº†è¯·æ±‚ï¼Œä½†æ²¡æœ‰è¿”å›žä»»ä½•å†…å®¹ã€‚
+206|éƒ¨åˆ†å†…å®¹|æœåŠ¡å™¨æˆåŠŸå¤„ç†äº†éƒ¨åˆ† GET è¯·æ±‚ã€‚
+**==3xx==** |**é‡å®šå‘**|**è¡¨ç¤ºè¦å®Œæˆè¯·æ±‚ï¼Œéœ€è¦è¿›ä¸€æ­¥æ“ä½œã€‚é€šå¸¸ï¼Œè¿™äº›çŠ¶æ€ä»£ç ç”¨æ¥é‡å®šå‘ã€‚**
+300 |å¤šç§é€‰æ‹©|é’ˆå¯¹è¯·æ±‚ï¼ŒæœåŠ¡å™¨å¯æ‰§è¡Œå¤šç§æ“ä½œã€‚æœåŠ¡å™¨å¯æ ¹æ®è¯·æ±‚è€…ï¼ˆuser agentï¼‰é€‰æ‹©ä¸€é¡¹æ“ä½œï¼Œæˆ–æä¾›æ“ä½œåˆ—è¡¨ä¾›è¯·æ±‚è€…é€‰æ‹©ã€‚
+301 |æ°¸ä¹…ç§»åŠ¨|è¯·æ±‚çš„ç½‘é¡µå·²æ°¸ä¹…ç§»åŠ¨åˆ°æ–°ä½ç½®ã€‚æœåŠ¡å™¨è¿”å›žæ­¤å“åº”ï¼ˆå¯¹ GET æˆ– HEAD è¯·æ±‚çš„å“åº”ï¼‰æ—¶ï¼Œä¼šè‡ªåŠ¨å°†è¯·æ±‚è€…è½¬åˆ°æ–°ä½ç½®ã€‚
+302 |ä¸´æ—¶ç§»åŠ¨|æœåŠ¡å™¨ç›®å‰ä»Žä¸åŒä½ç½®çš„ç½‘é¡µå“åº”è¯·æ±‚ï¼Œä½†è¯·æ±‚è€…åº”ç»§ç»­ä½¿ç”¨åŽŸæœ‰ä½ç½®æ¥è¿›è¡Œä»¥åŽçš„è¯·æ±‚ã€‚
+303 |æŸ¥çœ‹å…¶ä»–ä½ç½®|è¯·æ±‚è€…åº”å½“å¯¹ä¸åŒçš„ä½ç½®ä½¿ç”¨å•ç‹¬çš„ GET è¯·æ±‚æ¥æ£€ç´¢å“åº”æ—¶ï¼ŒæœåŠ¡å™¨è¿”å›žæ­¤ä»£ç ã€‚
+304 |æœªä¿®æ”¹|è‡ªä»Žä¸Šæ¬¡è¯·æ±‚åŽï¼Œè¯·æ±‚çš„ç½‘é¡µæœªä¿®æ”¹è¿‡ã€‚æœåŠ¡å™¨è¿”å›žæ­¤å“åº”æ—¶ï¼Œä¸ä¼šè¿”å›žç½‘é¡µå†…å®¹ã€‚
+305 |ä½¿ç”¨ä»£ç†|è¯·æ±‚è€…åªèƒ½ä½¿ç”¨ä»£ç†è®¿é—®è¯·æ±‚çš„ç½‘é¡µã€‚å¦‚æžœæœåŠ¡å™¨è¿”å›žæ­¤å“åº”ï¼Œè¿˜è¡¨ç¤ºè¯·æ±‚è€…åº”ä½¿ç”¨ä»£ç†ã€‚
+307 |ä¸´æ—¶é‡å®šå‘|æœåŠ¡å™¨ç›®å‰ä»Žä¸åŒä½ç½®çš„ç½‘é¡µå“åº”è¯·æ±‚ï¼Œä½†è¯·æ±‚è€…åº”ç»§ç»­ä½¿ç”¨åŽŸæœ‰ä½ç½®æ¥è¿›è¡Œä»¥åŽçš„è¯·æ±‚ã€‚
+**==4xx==**|**å®¢æˆ·ç«¯é”™è¯¯**|**è¿™ç±»çš„çŠ¶æ€ç ä»£è¡¨äº†å®¢æˆ·ç«¯çœ‹èµ·æ¥å¯èƒ½å‘ç”Ÿäº†é”™è¯¯ï¼Œå¦¨ç¢äº†æœåŠ¡å™¨çš„å¤„ç†ã€‚**
+400|é”™è¯¯è¯·æ±‚|æœåŠ¡å™¨ä¸ç†è§£è¯·æ±‚çš„è¯­æ³•ã€‚
+401|æœªæŽˆæƒ|è¯·æ±‚è¦æ±‚èº«ä»½éªŒè¯ã€‚å¯¹äºŽéœ€è¦ç™»å½•çš„ç½‘é¡µï¼ŒæœåŠ¡å™¨å¯èƒ½è¿”å›žæ­¤å“åº”ã€‚
+403|ç¦æ­¢|æœåŠ¡å™¨æ‹’ç»è¯·æ±‚ã€‚
+404|æœªæ‰¾åˆ°|æœåŠ¡å™¨æ‰¾ä¸åˆ°è¯·æ±‚çš„ç½‘é¡µã€‚
+405|æ–¹æ³•ç¦ç”¨|ç¦ç”¨è¯·æ±‚ä¸­æŒ‡å®šçš„æ–¹æ³•ã€‚
+406|ä¸æŽ¥å—|æ— æ³•ä½¿ç”¨è¯·æ±‚çš„å†…å®¹ç‰¹æ€§å“åº”è¯·æ±‚çš„ç½‘é¡µã€‚
+407|éœ€è¦ä»£ç†æŽˆæƒ|æ­¤çŠ¶æ€ä»£ç ä¸Ž 401ï¼ˆæœªæŽˆæƒï¼‰ç±»ä¼¼ï¼Œä½†æŒ‡å®šè¯·æ±‚è€…åº”å½“æŽˆæƒä½¿ç”¨ä»£ç†ã€‚
+408|è¯·æ±‚è¶…æ—¶|æœåŠ¡å™¨ç­‰å€™è¯·æ±‚æ—¶å‘ç”Ÿè¶…æ—¶ã€‚
+409|å†²çª|æœåŠ¡å™¨åœ¨å®Œæˆè¯·æ±‚æ—¶å‘ç”Ÿå†²çªã€‚æœåŠ¡å™¨å¿…é¡»åœ¨å“åº”ä¸­åŒ…å«æœ‰å…³å†²çªçš„ä¿¡æ¯ã€‚
+410|å·²åˆ é™¤|å¦‚æžœè¯·æ±‚çš„èµ„æºå·²æ°¸ä¹…åˆ é™¤ï¼ŒæœåŠ¡å™¨å°±ä¼šè¿”å›žæ­¤å“åº”ã€‚
+411|éœ€è¦æœ‰æ•ˆé•¿åº¦|æœåŠ¡å™¨ä¸æŽ¥å—ä¸å«æœ‰æ•ˆå†…å®¹é•¿åº¦æ ‡å¤´å­—æ®µçš„è¯·æ±‚ã€‚
+412|æœªæ»¡è¶³å‰ææ¡ä»¶|æœåŠ¡å™¨æœªæ»¡è¶³è¯·æ±‚è€…åœ¨è¯·æ±‚ä¸­è®¾ç½®çš„å…¶ä¸­ä¸€ä¸ªå‰ææ¡ä»¶ã€‚
+413|è¯·æ±‚å®žä½“è¿‡å¤§|æœåŠ¡å™¨æ— æ³•å¤„ç†è¯·æ±‚ï¼Œå› ä¸ºè¯·æ±‚å®žä½“è¿‡å¤§ï¼Œè¶…å‡ºæœåŠ¡å™¨çš„å¤„ç†èƒ½åŠ›ã€‚
+414|è¯·æ±‚çš„ URI è¿‡é•¿|è¯·æ±‚çš„ URIï¼ˆé€šå¸¸ä¸ºç½‘å€ï¼‰è¿‡é•¿ï¼ŒæœåŠ¡å™¨æ— æ³•å¤„ç†ã€‚
+415|ä¸æ”¯æŒçš„åª’ä½“ç±»åž‹|è¯·æ±‚çš„æ ¼å¼ä¸å—è¯·æ±‚é¡µé¢çš„æ”¯æŒã€‚
+416|è¯·æ±‚èŒƒå›´ä¸ç¬¦åˆè¦æ±‚|å¦‚æžœé¡µé¢æ— æ³•æä¾›è¯·æ±‚çš„èŒƒå›´ï¼Œåˆ™æœåŠ¡å™¨ä¼šè¿”å›žæ­¤çŠ¶æ€ä»£ç ã€‚
+417|æœªæ»¡è¶³æœŸæœ›å€¼|æœåŠ¡å™¨æœªæ»¡è¶³"æœŸæœ›"è¯·æ±‚æ ‡å¤´å­—æ®µçš„è¦æ±‚ã€‚
+**==5xx==**|**æœåŠ¡å™¨é”™è¯¯**|**è¿™äº›çŠ¶æ€ä»£ç è¡¨ç¤ºæœåŠ¡å™¨åœ¨å°è¯•å¤„ç†è¯·æ±‚æ—¶å‘ç”Ÿå†…éƒ¨é”™è¯¯ã€‚è¿™äº›é”™è¯¯å¯èƒ½æ˜¯æœåŠ¡å™¨æœ¬èº«çš„é”™è¯¯ï¼Œè€Œä¸æ˜¯è¯·æ±‚å‡ºé”™ã€‚**
+500|æœåŠ¡å™¨å†…éƒ¨é”™è¯¯|æœåŠ¡å™¨é‡åˆ°é”™è¯¯ï¼Œæ— æ³•å®Œæˆè¯·æ±‚ã€‚
+501|å°šæœªå®žæ–½|æœåŠ¡å™¨ä¸å…·å¤‡å®Œæˆè¯·æ±‚çš„åŠŸèƒ½ã€‚ä¾‹å¦‚ï¼ŒæœåŠ¡å™¨æ— æ³•è¯†åˆ«è¯·æ±‚æ–¹æ³•æ—¶å¯èƒ½ä¼šè¿”å›žæ­¤ä»£ç ã€‚
+502|é”™è¯¯ç½‘å…³|æœåŠ¡å™¨ä½œä¸ºç½‘å…³æˆ–ä»£ç†ï¼Œä»Žä¸Šæ¸¸æœåŠ¡å™¨æ”¶åˆ°æ— æ•ˆå“åº”ã€‚
+503|æœåŠ¡ä¸å¯ç”¨|æœåŠ¡å™¨ç›®å‰æ— æ³•ä½¿ç”¨ï¼ˆç”±äºŽè¶…è½½æˆ–åœæœºç»´æŠ¤ï¼‰ã€‚é€šå¸¸ï¼Œè¿™åªæ˜¯æš‚æ—¶çŠ¶æ€ã€‚
+504|ç½‘å…³è¶…æ—¶|æœåŠ¡å™¨ä½œä¸ºç½‘å…³æˆ–ä»£ç†ï¼Œä½†æ˜¯æ²¡æœ‰åŠæ—¶ä»Žä¸Šæ¸¸æœåŠ¡å™¨æ”¶åˆ°è¯·æ±‚ã€‚
+505|HTTP ç‰ˆæœ¬ä¸å—æ”¯æŒ|æœåŠ¡å™¨ä¸æ”¯æŒè¯·æ±‚ä¸­æ‰€ç”¨çš„ HTTP åè®®ç‰ˆæœ¬ã€‚
