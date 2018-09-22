@@ -93,6 +93,7 @@ x09|产权核验服务|公共服务|platform_PUB_property_verification
 y00|平台设施-基础服务|基础服务|`预留`
 y01|权限|基础服务|platform_BAS_permission
 y02|组织机构|基础服务|platform_BAS_orgnization
+y03|鉴权授权中民心|基础服务|platfrom_BAS_AuthenticationAuthorization
 **==z==**|**==平台设施-平台架构==**|平台设施-平台架构|||
 z00|平台设施-平台架构|平台架构|`预留`
 z01|服务注册/发现|平台架构|platform_UPA_eureka
