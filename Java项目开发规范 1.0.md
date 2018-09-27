@@ -128,39 +128,40 @@
 
 ## 六、注释规范
 1. **文件注释**
->    - 作者 `author`
->    - 描述 `description`
->    - 日期 `date`
 
-```java
-/**
-  * @Author: wangshuai
-  * @Description: 注释说明
-  * @Date: Created in 10:55 2018/4/14
-*/
- ```
- 
+    >    - 作者 `author`
+    >    - 描述 `description`
+    >    - 日期 `date`
+    
+    ```java
+    /**
+      * @Author: wangshuai
+      * @Description: 注释说明
+      * @Date: Created in 10:55 2018/4/14
+    */
+     ```
 2. **方法注释**（用多行注释）
->    - 作者 `author`
->    - 日期 `date`
->    - 功能描述 `information`
->    - 修改日期 `update`
->    - 修改目的 
 
- ```java
-/**
-  * @Author: wangshuai
-  * @Date: Created in 10:55 2018/4/14
-  * @Description: 功能
-  * @param 参数1 String
-  * @param 参数2 Int
-*/
- ```
- 
+    >    - 作者 `author`
+    >    - 日期 `date`
+    >    - 功能描述 `information`
+    >    - 修改日期 `update`
+    >    - 修改目的 
+    
+     ```java
+    /**
+      * @Author: wangshuai
+      * @Date: Created in 10:55 2018/4/14
+      * @Description: 功能
+      * @param 参数1 String
+      * @param 参数2 Int
+    */
+    ```
 3. **单行注释** 
->    - 方法内的注释可以使用单行注释 
->    - 实体 `swagger` 注释
->    - controller层 `swagger` 注释
+
+    >    - 方法内的注释可以使用单行注释 
+    >    - 实体 `swagger` 注释
+    >    - controller层 `swagger` 注释
 
 [**<p align="right">>>返回目录<<</p>**](#目录)
 
