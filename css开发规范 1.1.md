@@ -218,7 +218,7 @@
 
 ### 九、字体大小适配
 我们一般的常用单位 `em`、`rem`、`px`、`%` 四种
-- em:结合父元素的font-size来根据屏幕宽度适配
+- em：结合父元素的font-size来根据屏幕宽度适配
 - rem：结合html元素的font-size来根据屏幕宽度适配
 - px：结合媒体查询进行不同设备分辨率进行适配
 - %：按百分比自适应布局
@@ -313,7 +313,7 @@
 ```
 #### iPad竖板显屏
 ```
-@media screen and (max-width : 1024px) {                    
+@media screen and (max-device-width: 768px) and (orientation: portrait {                    
 /* 样式写在这里 */          
 }     
 ```
