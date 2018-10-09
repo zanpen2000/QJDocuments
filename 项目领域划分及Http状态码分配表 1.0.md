@@ -92,7 +92,7 @@ x09|产权核验服务|公共服务|platform_PUB_property_verification
 **==y==**|**==平台设施-基础服务==**|平台设施-基础服务|||
 y00|平台设施-基础服务|基础服务|`预留`
 y01|权限|基础服务|platform_BAS_permission
-y02|组织机构|基础服务|platform_BAS_orgnization
+y02|组织机构|基础服务|BAS_orgnization
 y03|鉴权授权中心|基础服务|BAS_AuthenticationAuthorization
 y04|安全包|基础服务|BAS_safety
 **==z==**|**==平台设施-平台架构==**|平台设施-平台架构|||
