@@ -48,6 +48,7 @@ z|平台设施-平台架构|`UPA`|统一平台架构：<font color=orange>**U**<
 103|在线测评|人力资本|HCD_assessment||
 104|人资隐号|人力资本|HCD_hidden_call||原项目地址：https://hr.hiddencall.allhome.com.cn
 105|人资报表|人力资本|HCD_report||
+106|人资助手|人力资本|HCD_assistant||
 **==2==**|**==培训==**|培训教育|||`培训组织/会议组织/培训签到/培训考核/培训资料管理/直播管理/讲师管理/转化率分析`
 200|培训领域项目集合|培训教育|`培训领域的项目集合预留`
 201|千家MIS-会务篇|培训教育|TME_activity_assistant||活动助手概念升级
