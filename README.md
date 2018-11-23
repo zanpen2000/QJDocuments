@@ -15,7 +15,7 @@
 12. [Java 开发规范 1.0](http://git.allhome.com.cn/NetWorksDatas/Public/standard/blob/master/Java%20%E5%BC%80%E5%8F%91%E8%A7%84%E8%8C%83%201.0.md)
 13. [数据库设计规范 1.0](http://git.allhome.com.cn/NetWorksDatas/Public/standard/blob/master/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%A7%84%E8%8C%83%201.0.md)
 14. 项目评审流程
-15. [前端 开发行为指导 1.0](http://git.allhome.com.cn/NetWorksDatas/Public/standard/blob/master/%E5%89%8D%E7%AB%AF%20%E5%BC%80%E5%8F%91%E8%A1%8C%E4%B8%BA%E6%8C%87%E5%AF%BC%201.0.md)
+15. [前端 开发行为指导 1.1](http://git.allhome.com.cn/NetWorksDatas/Public/standard/blob/master/%E5%89%8D%E7%AB%AF%20%E5%BC%80%E5%8F%91%E8%A1%8C%E4%B8%BA%E6%8C%87%E5%AF%BC%201.1.md)
 16. [小程序开发行为指导 1.0](http://git.allhome.com.cn/NetWorksDatas/Public/standard/blob/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%BC%80%E5%8F%91%E8%A1%8C%E4%B8%BA%E6%8C%87%E5%AF%BC%201.0.md)
 17. [Java 开发行为指导 1.0](http://git.allhome.com.cn/NetWorksDatas/Public/standard/blob/master/Java%20%E5%BC%80%E5%8F%91%E8%A1%8C%E4%B8%BA%E6%8C%87%E5%AF%BC%201.0.md)
 18. 沟通术语词典
