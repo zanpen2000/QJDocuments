@@ -94,6 +94,7 @@ x06|全景看房|公共服务|platform_PUB_panoramic
 x07|记事本|公共服务|platform_PUB_notepad
 x08|房源验真（录入）|公共服务|PUB_house_entry_verify
 x09|产权核验服务|公共服务|platform_PUB_property_verification
+x10|语音转文字|公共服务|PUB_VoiceToText
 **==y==**|**==平台设施-基础服务==**|平台设施-基础服务|||
 y00|平台设施-基础服务|基础服务|`预留`
 y01|权限|基础服务|platform_BAS_permission
