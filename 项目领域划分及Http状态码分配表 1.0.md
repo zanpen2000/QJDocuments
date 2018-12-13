@@ -104,6 +104,7 @@ y04|安全包|基础服务|BAS_safety
 y05|前端组件库|基础服务|BAS_QUI
 y06|人源库|基础服务|BAS_HumanSourceLibrary
 y07|短信网关|基础服务|BAS_SMSGateway
+y08|房客源库|基础服务|BAS_HousingCustomer_Library
 **==z==**|**==平台设施-平台架构==**|平台设施-平台架构|||
 z00|平台设施-平台架构|平台架构|`预留`
 z01|服务注册/发现|平台架构|platform_UPA_eureka
