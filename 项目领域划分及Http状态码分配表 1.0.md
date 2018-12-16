@@ -96,6 +96,7 @@ x08|房源验真（录入）|公共服务|PUB_house_entry_verify
 x09|产权核验服务|公共服务|platform_PUB_property_verification
 x10|语音转文字|公共服务|PUB_VoiceToText
 x11|人脸识别在线服务|公共服务|PUB_FaceRecognitionOnline
+x12|Java公共Jar包|公共服务|PUB_framework_java
 **==y==**|**==平台设施-基础服务==**|平台设施-基础服务|||
 y00|平台设施-基础服务|基础服务|`预留`
 y01|权限|基础服务|platform_BAS_permission
@@ -106,7 +107,6 @@ y05|前端组件库|基础服务|BAS_QUI
 y06|人源库|基础服务|BAS_HumanSourceLibrary
 y07|短信网关|基础服务|BAS_SMSGateway
 y08|房客源库|基础服务|BAS_HousingCustomer_Library
-y09|Java公共Jar包|基础服务|BAS_framework_java
 **==z==**|**==平台设施-平台架构==**|平台设施-平台架构|||
 z00|平台设施-平台架构|平台架构|`预留`
 z01|服务注册/发现|平台架构|platform_UPA_eureka
