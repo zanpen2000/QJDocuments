@@ -44,8 +44,8 @@ z|平台设施-平台架构|`UPA`|统一平台架构：<font color=orange>**U**<
 **==1==**|**==人资==**|人力资本|||`招聘/入职/调岗/离职/辞退/复职/人员分配/职级晋升`
 100|人资领域项目集合|人力资本|`人资领域的项目集合预留`
 101|人资招聘|人力资本|HCD_recruitment||
-102|简历|人力资本|HCD_resume||
-103|在线测评|人力资本|HCD_assessment||
+102|简历（含测评）|人力资本|HCD_curriculum_vitae||原102+103（HCD_resume【简历】+HCD_assessment【在线测评】）|
+103||人力资本|||
 104|人资隐号|人力资本|HCD_hidden_call||原项目地址：https://hr.hiddencall.allhome.com.cn
 105|人资报表|人力资本|HCD_report||
 106|人资助手|人力资本|HCD_assistant||
