@@ -97,6 +97,7 @@ x09|产权核验服务|公共服务|platform_PUB_property_verification||？？
 x10|语音转文字|公共服务|PUB_VoiceToText
 x11|人脸识别在线服务|公共服务|PUB_FaceRecognitionOnline
 x12|Java公共Jar包|公共服务|PUB_FrameWork_Java
+x13|集团网电话号码管理|公共服务|PUB_GroupNetworkTelNum_Java
 **==y==**|**==平台设施-基础服务==**|平台设施-基础服务|||
 y00|平台设施-基础服务|基础服务|`预留`
 y01|权限|基础服务|platform_BAS_permission
