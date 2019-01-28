@@ -110,6 +110,7 @@ y06|人源库|基础服务|BAS_HumanSourceLibrary
 y07|短信网关|基础服务|BAS_SMSGateway
 y08|房客源库|基础服务|BAS_HousingCustomer_Library
 y09|手机号码段归属地查询|基础服务|BAS_phone_arrtibution
+Y10|鉴权授权钥匙扣|基础服务|BAS_Keychain|https://git.allhome.com.cn/Platform/BAS/BAS_Authentication_Authorization/BAS_Keychain|鉴权授权中心（Y03）项目的子项目，调用人脸识别服务
 **==z==**|**==平台设施-平台架构==**|平台设施-平台架构|||
 z00|平台设施-平台架构|平台架构|`预留`
 z01|服务注册/发现|平台架构|platform_UPA_eureka
