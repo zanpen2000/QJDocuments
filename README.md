@@ -2,7 +2,7 @@
 
 # 目录
 1. [项目开发工作流程 1.16](http://git.allhome.com.cn/NetWorksDatas/Public/standard/blob/master/%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%A8%8B%201.16.pdf)
-2. [GitLab使用规范 1.2](http://git.allhome.com.cn/NetWorksDatas/Public/standard/blob/master/GitLab%E4%BD%BF%E7%94%A8%E8%A7%84%E8%8C%83%201.2.png)
+2. [GitLab操作规范 1.4](https://git.allhome.com.cn/NetWorksDatas/Public/standard/blob/master/%E5%8D%83%E5%AE%B6%E7%BD%91%E7%BB%9CGitlab%E6%93%8D%E4%BD%9C%E8%A7%84%E8%8C%83%E5%92%8C%E5%B7%A5%E4%BD%9C%E6%B5%81.md)
 3. [版本号控制规范 1.1](http://git.allhome.com.cn/NetWorksDatas/Public/standard/blob/master/%E7%89%88%E6%9C%AC%E5%8F%B7%E6%8E%A7%E5%88%B6%E8%A7%84%E8%8C%83%201.1.md)
 4. [项目管理（领域划分）2.0](https://git.allhome.com.cn/NetWorksDatas/Public/standard/blob/master/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%862.0.md)
 5. [自定义HTTP状态码 2.0](https://git.allhome.com.cn/NetWorksDatas/Public/standard/blob/master/%E8%87%AA%E5%AE%9A%E4%B9%89HTTP%E7%8A%B6%E6%80%81%E7%A0%812.0.md)
