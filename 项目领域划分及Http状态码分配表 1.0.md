@@ -1,4 +1,4 @@
-# 项目领域划分及Http状态码分配表 1.0
+# 项目领域划分及Http状态码分配表 1.0（已弃用）-> [项目领域划分及Http状态码分配表  2.0](https://git.allhome.com.cn/NetWorksDatas/Public/standard/blob/master/%E8%87%AA%E5%AE%9A%E4%B9%89HTTP%E7%8A%B6%E6%80%81%E7%A0%812.0.md)
 
 > # 说明
 > - 状态码是一组由“0~9，a~z”组成的6位字符串，分为三级（第一位、第二三位、第四至第六位）
