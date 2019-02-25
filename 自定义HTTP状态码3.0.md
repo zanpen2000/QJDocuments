@@ -4,7 +4,7 @@
 
 |原领域状态码|HTTP状态码|领域名称|缩写|备注|
 |-|-|-|-|-|
-|0|~~1000~~|~~平台公用-成功类~~||停用，分散到各领域之中
+|0|1000|平台公用-成功类||
 |1|100000|人力资本（简称：人资）|`HCD`|人力资本部：<font color=orange>**H**</font>uman <font color=orange>**C**</font>apital <font color=orange>**D**</font>epartment
 |2|110000|培训教育（简称：培训）|`TME`|培训教育部：<font color=orange>**T**</font>raining <font color=orange>**M**</font>inistry of <font color=orange>**E**</font>ducation
 |3|120000|财务|`GAD`|财务部：<font color=orange>**G**</font>eneral<font color=orange>**A**</font>ccounting <font color=orange>**D**</font>epartment
