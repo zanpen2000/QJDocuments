@@ -1,3 +1,9 @@
+# 公告说明：此项目中的文档仅做为历史文档存放，停止更新Readme文件，最新内容迁至本项目[WiKi](https://git.allhome.com.cn/NetWorksDatas/Public/standard/wikis/%E5%8D%83%E5%AE%B6%E7%BD%91%E7%BB%9C%E5%9B%A2%E9%98%9F%E5%85%AC%E7%94%A8%E8%B5%84%E6%96%99)
+## 公告时间：2019-03-20
+
+---
+---
+
 # 网络技术部公用资料--团队工作规范及工作流程
 
 # 目录
