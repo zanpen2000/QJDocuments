@@ -19,12 +19,12 @@
 10. [CSS 开发规范 1.1](http://git.allhome.com.cn/NetWorksDatas/Public/standard/blob/master/css%E5%BC%80%E5%8F%91%E8%A7%84%E8%8C%83%201.1.md)
 11. [CSS 命名规范 1.1](http://git.allhome.com.cn/NetWorksDatas/Public/standard/blob/master/css%E5%91%BD%E5%90%8D%E8%A7%84%E8%8C%83%201.1.md)
 12. [小程序开发命名规范 1.0](http://git.allhome.com.cn/NetWorksDatas/Public/standard/blob/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%BC%80%E5%8F%91%E5%91%BD%E5%90%8D%E8%A7%84%E8%8C%83%201.0.md)
-13. [Java 开发规范 1.0](http://git.allhome.com.cn/NetWorksDatas/Public/standard/blob/master/Java%20%E5%BC%80%E5%8F%91%E8%A7%84%E8%8C%83%201.0.md)
-14. [数据库设计规范 1.0](http://git.allhome.com.cn/NetWorksDatas/Public/standard/blob/master/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%A7%84%E8%8C%83%201.0.md)
+13. [Java 开发规范](https://git.allhome.com.cn/NetWorksDatas/Public/standard/blob/master/Java-%E5%BC%80%E5%8F%91%E8%A7%84%E8%8C%83.md)
+14. [数据库设计规范](https://git.allhome.com.cn/NetWorksDatas/Public/standard/blob/master/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%A7%84%E8%8C%83.md)
 15. 项目评审流程
 16. [前端 开发行为指导 1.1](http://git.allhome.com.cn/NetWorksDatas/Public/standard/blob/master/%E5%89%8D%E7%AB%AF%20%E5%BC%80%E5%8F%91%E8%A1%8C%E4%B8%BA%E6%8C%87%E5%AF%BC%201.1.md)
 17. [小程序开发行为指导 1.0](http://git.allhome.com.cn/NetWorksDatas/Public/standard/blob/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%BC%80%E5%8F%91%E8%A1%8C%E4%B8%BA%E6%8C%87%E5%AF%BC%201.0.md)
-18. [Java 开发行为指导 1.0](http://git.allhome.com.cn/NetWorksDatas/Public/standard/blob/master/Java%20%E5%BC%80%E5%8F%91%E8%A1%8C%E4%B8%BA%E6%8C%87%E5%AF%BC%201.0.md)
+18. [Java 开发行为指导](https://git.allhome.com.cn/NetWorksDatas/Public/standard/blob/master/Java-%E5%BC%80%E5%8F%91%E8%A1%8C%E4%B8%BA%E6%8C%87%E5%AF%BC.md)
 19. 沟通术语词典
 20. [组长职责 1.0](http://git.allhome.com.cn/NetWorksDatas/Public/standard/blob/master/%E7%BB%84%E9%95%BF%E8%81%8C%E8%B4%A3%201.0.md)
 
