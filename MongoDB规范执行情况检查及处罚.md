@@ -1,4 +1,4 @@
-# MongoDB规范执行情况检查及处罚
+# [MongoDB规范](https://git.allhome.com.cn/NetWorksDatas/Public/standard/blob/master/MongoDB%E8%A7%84%E8%8C%83.md)执行情况检查及处罚
 
 | 整理 | 版本 | 日期       | 描述                                      |
 | ---- | ---- | ---------- | ----------------------------------------- |
