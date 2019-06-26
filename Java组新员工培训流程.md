@@ -2,12 +2,13 @@
 
 | 整理 | 版本 | 日期 | 描述
 | - | - | - | - |
-| 孙靖武 | 1.0 | 2019.05.03 | 整理
+| 孙靖武 | 1.0.0 | 2019.05.03 | 整理
+| 孙靖武 | 1.0.1 | 2019.06.26 | 更新链接
 
 1. 学习了解团队规范
-    - [Java开发行为指导](https://git.allhome.com.cn/NetWorksDatas/Public/standard/blob/master/Java%20%E5%BC%80%E5%8F%91%E8%A1%8C%E4%B8%BA%E6%8C%87%E5%AF%BC%201.0.md)
-    - [Java开发规范](https://git.allhome.com.cn/NetWorksDatas/Public/standard/blob/master/Java%20%E5%BC%80%E5%8F%91%E8%A7%84%E8%8C%83%201.0.md)
-    - [GitLab操作规范](https://git.allhome.com.cn/NetWorksDatas/Public/standard/blob/master/GitLab%E8%A7%84%E8%8C%83.md)&[流程](https://docs.google.com/presentation/d/1AwL-hEr4EX_lYq4PxymyPbnJuuUUBMGdkN72X_0sado/edit)
+    - [Java开发行为指导](https://git.allhome.com.cn/NetWorksDatas/Public/standard/blob/master/History_DOC/Java-%E5%BC%80%E5%8F%91%E8%A1%8C%E4%B8%BA%E6%8C%87%E5%AF%BC.md)
+    - [Java开发规范](https://git.allhome.com.cn/NetWorksDatas/Public/standard/blob/master/History_DOC/Java-%E5%BC%80%E5%8F%91%E8%A7%84%E8%8C%83.md)
+    - [GitLab操作规范](https://git.allhome.com.cn/NetWorksDatas/Public/standard/blob/master/Gitlab%E6%93%8D%E4%BD%9C%E8%A7%84%E8%8C%83.md)
     - [接口规范](https://git.allhome.com.cn/NetWorksDatas/Public/standard/blob/master/%E6%8E%A5%E5%8F%A3%E8%A7%84%E8%8C%83.md)
     - [数据库规范](https://git.allhome.com.cn/NetWorksDatas/Public/standard/blob/master/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%A7%84%E8%8C%83%201.0.md)
 
