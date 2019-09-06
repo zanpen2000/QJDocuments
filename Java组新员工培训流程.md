@@ -16,7 +16,7 @@
     - [Java开发规范](https://git.allhome.com.cn/NetWorksDatas/Public/standard/blob/master/History_DOC/Java-%E5%BC%80%E5%8F%91%E8%A7%84%E8%8C%83.md)
     - [GitLab操作规范](https://git.allhome.com.cn/NetWorksDatas/Public/standard/blob/master/Gitlab%E6%93%8D%E4%BD%9C%E8%A7%84%E8%8C%83.md)
     - [接口规范](https://git.allhome.com.cn/NetWorksDatas/Public/standard/blob/master/%E6%8E%A5%E5%8F%A3%E8%A7%84%E8%8C%83.md)
-    - [数据库规范](https://git.allhome.com.cn/NetWorksDatas/Public/standard/blob/master/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%A7%84%E8%8C%83%201.0.md)
+    - [数据库规范](https://git.allhome.com.cn/NetWorksDatas/Public/standard/blob/master/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1%E8%A7%84%E8%8C%83.md)
 
 3. 学习Java组开发基本技能
     - SpringBoot Web项目
