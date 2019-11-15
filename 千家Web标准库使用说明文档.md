@@ -26,6 +26,16 @@ npm config set registry http://registry.npmjs.org/
 npm install --save-dev common
 ```
 
+cdn引用
+
+```
+<script src="https://qjsl.allhome.com.cn/index.js"></script>
+
+externals: {
+    "common": 'QjMethod'
+}
+```
+
 > #### 3. 引用
 
 安装完成之后需要在项目中正常引用
@@ -348,72 +358,4 @@ singleton.createInstance("需要创建的实例","s实例名称","...参数");
 //  创建
 singleton.getInstance("$_requestFactory");
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
