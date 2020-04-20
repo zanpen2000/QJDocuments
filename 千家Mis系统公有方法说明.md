@@ -101,7 +101,7 @@ parent.window.$loading(obj);
 使用场景：用户上传文件时，还没有上传到oss时，用户点击文件，通过File获取到本地路径，打开用户电脑中对应的文件
 
 ```javascript
-parent.window.$saveDialog("这里是url");
+parent.window..$shell("这里是url");
 ```
 
 > openRemoteFile - 打开方法
