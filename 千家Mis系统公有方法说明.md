@@ -95,3 +95,19 @@ let obj = {
 };
 parent.window.$loading(obj);
 ```
+
+> $shell - 打开本地文件
+
+使用场景：用户上传文件时，还没有上传到oss时，用户点击文件，通过File获取到本地路径，打开用户电脑中对应的文件
+
+```javascript
+parent.window..$shell("这里是url");
+```
+
+> openRemoteFile - 打开方法
+
+当用户想查看上传的文件时，此时文件已经上传到oss需要通过该方法静默下载到用户本地之后(Downloads文件夹，默认路径不能更改)，下载完成之后自动打开文件。
+
+```javascript
+parent.window.openRemoteFile("这里是url");
+```
