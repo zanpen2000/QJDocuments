@@ -1,15 +1,15 @@
-#PHP编码风格规范
+# PHP编码风格规范
 
 本规范参考PHP标准规范中编码风格规范PSR-2，根据公司实际情况做了少量修改，[查看PSR-2规范](https://learnku.com/docs/psr/psr-2-coding-style-guide/1606)。
 
-##编码风格指南
+## 编码风格指南
 本篇规范是 [PSR-1][] 基本代码规范的继承与扩展。
 
 本规范希望通过制定一系列规范化PHP代码的规则，以减少在浏览不同作者的代码时，因代码风格的不同而造成不便。
 
 当多名程序员在多个项目中合作时，就需要一个共同的编码规范， 而本文中的风格规范源自于多个不同项目代码风格的共同特性， 因此，本规范的价值在于我们都遵循这个编码风格，而不是在于它本身。
 
-##1. 概览
+## 1. 概览
 
 * 代码 **必须** 遵循 [PSR-1](https://learnku.com/docs/psr/basic-coding-standard/1605) 中的编码规范 。
 * 代码 **必须** 使用4个空格符而不是「Tab 键」进行缩进。
@@ -22,7 +22,7 @@
 * 控制结构的开始花括号（`{`） **必须** 写在声明的同一行，而结束花括号（`}`） **必须** 写在主体后自成一行。
 * 控制结构的开始左括号后和结束右括号前，都 **一定不可** 有空格符。
 
-###1.1. 例子
+### 1.1. 例子
 以下例子程序简单地展示了以上大部分规范：
 
 	<?php 
@@ -52,16 +52,16 @@
 	}
 
  
-##2. 通则
-###2.1 基本编码准则
+## 2. 通则
+### 2.1 基本编码准则
 代码 **必须** 符合 [PSR-1](https://learnku.com/docs/psr/basic-coding-standard/1605) 中的所有规范。
-###2.2 文件
+### 2.2 文件
 所有PHP文件 **必须** 使用 `Unix LF (linefeed)` 作为行的结束符。
 
 所有PHP文件 **必须** 以一个空白行作为结束。
 
 纯PHP代码文件 **必须** 省略最后的 `?>` 结束标签。
-###2.3. 行
+### 2.3. 行
 行的长度 #一定不可# 有硬性的约束。
 
 软性的长度约束 **必须** 要限制在 120 个字符以内，若超过此长度，带代码规范检查的编辑器 **必须** 要发出警告，不过 **一定不可** 发出错误提示。
@@ -74,18 +74,18 @@
 
 每行 **一定不可** 存在多于一条语句。
 
-###2.4. 缩进
+### 2.4. 缩进
 
 代码 **必须** 使用 4 个空格符的缩进，**一定不可** 用 `tab` 键。
 
 >备注：仅使用空格，而不是使用空格和 `tab` 键混在一起， 能帮助避免在查看代码差异，打补丁，查看提交历史，以及进行注解时产生问题。使用空格也使得代码对齐更轻松。
 
-###2.5. 关键字 以及 True/False/Null
+### 2.5. 关键字 以及 True/False/Null
 PHP所有 [关键字](https://www.php.net/manual/en/reserved.keywords.php) **必须** 全部小写。
 
 常量 `true` 、`false` 和 `null` 也 **必须** 全部小写。
 
-##3. `namespace` 以及 `use` 声明
+## 3. `namespace` 以及 `use` 声明
 `namespace` 声明后 **必须** 插入一个空白行。
 
 所有 `use` **必须** 在 `namespace` 后声明。
@@ -105,10 +105,10 @@ PHP所有 [关键字](https://www.php.net/manual/en/reserved.keywords.php) **必
 	
 	// ... 更多的 PHP 代码在这里 ...
 
-##4. 类、属性和方法
+## 4. 类、属性和方法
 此处的「类」泛指所有的「class类」、「接口」以及「traits 可复用代码块」。
 
-###4.1. 扩展与继承
+### 4.1. 扩展与继承
 关键词 `extends` 和 `implements` **必须** 写在类名称的同一行。
 
 类的开始花括号 **必须** 独占一行，结束花括号也 **必须** 在类主体后独占一行。
@@ -144,7 +144,7 @@ PHP所有 [关键字](https://www.php.net/manual/en/reserved.keywords.php) **必
 		// 这里面是常量、属性、类方法 
 	}
 
-###4.2. 属性
+### 4.2. 属性
 
 每个属性都 **必须** 添加访问修饰符。
 
@@ -164,7 +164,7 @@ PHP所有 [关键字](https://www.php.net/manual/en/reserved.keywords.php) **必
 		public $foo = null; 
 	}
 	
-###4.3. 方法
+### 4.3. 方法
 所有方法都 **必须** 添加访问修饰符。
 
 **不该** 使用下划线作为前缀，来区分方法是 protected 或 private。
@@ -184,7 +184,7 @@ PHP所有 [关键字](https://www.php.net/manual/en/reserved.keywords.php) **必
 		} 
 	}
 
-###4.4. 方法的参数
+### 4.4. 方法的参数
 参数列表中，每个逗号后面 **必须** 要有一个空格，而逗号前面 **一定不可** 有空格。
 
 有默认值的参数，**必须** 放到参数列表的末尾。
@@ -218,7 +218,7 @@ PHP所有 [关键字](https://www.php.net/manual/en/reserved.keywords.php) **必
 		}
 	}
  
-###4.5. `abstract` 、 `final` 、 以及 `static`
+### 4.5. `abstract` 、 `final` 、 以及 `static`
 
 需要添加 `abstract` 或 `final` 声明时，**必须** 写在访问修饰符前，而 `static` 则 **必须** 写在其后。
 
@@ -235,7 +235,7 @@ PHP所有 [关键字](https://www.php.net/manual/en/reserved.keywords.php) **必
 		} 
 	}
 
-###4.6. 方法及函数调用
+### 4.6. 方法及函数调用
 方法及函数调用时，方法名或函数名与参数左括号之间 **一定不可** 有空格，参数右括号前也 **一定不可** 有空格。每个参数前 **一定不可** 有空格，但其后 **必须** 有一个空格。
 
 	<?php 
@@ -252,7 +252,7 @@ PHP所有 [关键字](https://www.php.net/manual/en/reserved.keywords.php) **必
 		$muchLongerArgument 
 	);
 
-##5. 控制结构
+## 5. 控制结构
 控制结构的基本规范如下：
 
 * 控制结构关键词后 **必须** 有一个空格。
@@ -264,7 +264,7 @@ PHP所有 [关键字](https://www.php.net/manual/en/reserved.keywords.php) **必
 
 每个结构体的主体都 **必须** 被包含在成对的花括号之中， 这能让结构体更加结构话，以及减少加入新行时，出错的可能性。
 
-###5.1. `if` 、`elseif` 和 `else`
+### 5.1. `if` 、`elseif` 和 `else`
 标准的 `if` 结构如下代码所示，请留意「括号」、「空格」以及「花括号」的位置， 注意 `else` 和 `elseif` 都与前面的结束花括号在同一行。
 
 	<?php 
@@ -278,7 +278,7 @@ PHP所有 [关键字](https://www.php.net/manual/en/reserved.keywords.php) **必
 
 **应该** 使用关键词 `elseif` 代替所有 `else if` ，以使得所有的控制关键字都像是单独的一个词。
 
-###5.2. `switch` 和 `case`
+### 5.2. `switch` 和 `case`
 标准的 `switch` 结构如下代码所示，留意「括号」、「空格」以及「花括号」的位置。 `case` 语句 **必须** 相对 `switch` 进行一次缩进，而 `break` 语句以及 `case` 内的其它语句都 **必须** 相对 `case` 进行一次缩进。
 
 如果存在非空的 `case` 直穿语句，主体里 **必须** 有类似 `// no break` 的注释。
@@ -301,7 +301,7 @@ PHP所有 [关键字](https://www.php.net/manual/en/reserved.keywords.php) **必
 			break; 
 	}
 
-###5.3. `while` 和 `do while`
+### 5.3. `while` 和 `do while`
 一个规范的 `while` 语句应该如下所示，注意其「括号」、「空格」以及「花括号」的位置。
 
 	<?php 
@@ -316,7 +316,7 @@ PHP所有 [关键字](https://www.php.net/manual/en/reserved.keywords.php) **必
 		// structure body; 
 	} while ($expr);
 
-###5.4. `for`
+### 5.4. `for`
 标准的 `for` 语句如下所示，注意其「括号」、「空格」以及「花括号」的位置。
 
 	<?php 
@@ -324,7 +324,7 @@ PHP所有 [关键字](https://www.php.net/manual/en/reserved.keywords.php) **必
 		// for body 
 	}
 
-###5.5. `foreach`
+### 5.5. `foreach`
 标准的 `foreach` 语句如下所示，注意其「括号」、「空格」以及「花括号」的位置。
 
 	<?php 
@@ -332,7 +332,7 @@ PHP所有 [关键字](https://www.php.net/manual/en/reserved.keywords.php) **必
 		// foreach body 
 	}
 
-###5.6. `try`, `catch`
+### 5.6. `try`, `catch`
 标准的 `try catch` 语句如下所示，注意其「括号」、「空格」以及「花括号」的位置。
 
 	<?php 
@@ -344,7 +344,7 @@ PHP所有 [关键字](https://www.php.net/manual/en/reserved.keywords.php) **必
 		// catch body 
 	}
 
-##6. 闭包
+## 6. 闭包
 
 闭包声明时，关键词 `function` 后以及关键词 `use` 的前后都 **必须** 要有一个空格。
 
