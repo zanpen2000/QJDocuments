@@ -28,13 +28,15 @@ parent.window.globalLogout();
 //      name:"房屋产权查询",//	必传,见说明
 //      url:"https://dosq.allhome.com.cn"//	必传，打开页面连接
 //      pCode:"344" //  当前父页面的Code
+//      type:2  //  2 写死
 //  }
 
 let arg = {
     code:344,
     name:"新房应收单 - FG20200101",
     url:"https://dosq.allhome.com.cn",
-    pCode:"344"
+    pCode:"344",
+    type:2
 }
 parent.window.globalOpenChildApp(arg);
 ```
@@ -118,7 +120,7 @@ parent.window.openRemoteFile("这里是url");
 
 使用场景：需要子项目主动触发关闭，mis系统的tab窗口。
 
-```javascipt
+```javascript
 parent.window.globalDeleteChildApp("这是里code");
 ```
 
@@ -126,7 +128,10 @@ parent.window.globalDeleteChildApp("这是里code");
 
 使用场景：当tab页面发生更改时，需要刷新列表页面。
 
-```
+```javascript
 //  若第二个参数存在则不刷新这个code对应的code值
+//  使用该方法有两种情况
+//  1. 需要在子项目中，window上添加refresh方法，以供MIS系统调用
+//  2. 如果没有添加refresh方法，则会默认刷新整个页面
 parent.window.GlobalRefresh("这是里pCode","当前页面code");
 ```
