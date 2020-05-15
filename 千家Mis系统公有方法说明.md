@@ -27,12 +27,14 @@ parent.window.globalLogout();
 //      code:344, //	必传,项目code
 //      name:"房屋产权查询",//	必传,见说明
 //      url:"https://dosq.allhome.com.cn"//	必传，打开页面连接
+//      pCode:"344" //  当前父页面的Code
 //  }
 
 let arg = {
     code:344,
     name:"新房应收单 - FG20200101",
-    url:"https://dosq.allhome.com.cn"
+    url:"https://dosq.allhome.com.cn",
+    pCode:"344"
 }
 parent.window.globalOpenChildApp(arg);
 ```
@@ -101,7 +103,7 @@ parent.window.$loading(obj);
 使用场景：用户上传文件时，还没有上传到oss时，用户点击文件，通过File获取到本地路径，打开用户电脑中对应的文件
 
 ```javascript
-parent.window..$shell("这里是url");
+parent.window.$shell("这里是url");
 ```
 
 > openRemoteFile - 打开方法
@@ -110,4 +112,21 @@ parent.window..$shell("这里是url");
 
 ```javascript
 parent.window.openRemoteFile("这里是url");
+```
+
+> globalDeleteChildApp - 关闭child
+
+使用场景：需要子项目主动触发关闭，mis系统的tab窗口。
+
+```javascipt
+parent.window.globalDeleteChildApp("这是里code");
+```
+
+> GlobalRefresh - 刷新
+
+使用场景：当tab页面发生更改时，需要刷新列表页面。
+
+```
+//  若第二个参数存在则不刷新这个code对应的code值
+parent.window.GlobalRefresh("这是里pCode","当前页面code");
 ```
